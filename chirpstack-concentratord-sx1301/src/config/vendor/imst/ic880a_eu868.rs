@@ -146,6 +146,6 @@ pub fn new() -> Configuration {
         ],
         gps_tty_path: None,
         spidev_path: "/dev/spidev0.0".to_string(),
-        reset_pin: Some(5),
+        reset_pin: Some(conf.gateway.reset_pin),
     }
 }
